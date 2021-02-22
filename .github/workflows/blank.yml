@@ -21,7 +21,9 @@ jobs:
     steps:
       - name: Install 7Zip PowerShell Module
         shell: powershell
-        run: Install-Module 7Zip4PowerShell -Force -Verbose
+        run: |
+          Install-Module 7Zip4PowerShell -Force -Verbose
+          echo "::add-path::C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin"
 
       - name: Compile Python
         run: |
