@@ -30,8 +30,8 @@ jobs:
 
       - name: Compile Python
         run: |
-          curl -O -L -s https://github.com/python/cpython/archive/v3.8.8.tar.gz
-          tar xf v3.8.8.tar.gz
+          curl -O -L -s https://github.com/concretejacobian/CPython-Windows-ARM64/releases/download/v3.8.8/cpython-3.8.8.tar.gz
+          tar xf cpython-3.8.8.tar.gz
           cd cpython-3.8.8
           PCbuild\build.bat -e -p ARM64
 
